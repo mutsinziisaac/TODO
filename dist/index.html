@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.3.67/css/materialdesignicons.min.css
+    "
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <title>TODO</title>
+  </head>
+  <body>
+    <header><span class="mdi mdi-square-rounded-badge"></span> TODO APP</header>
+    <div class="container">
+      <dialog data-modal>
+        <form action="#" id="newTodo">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+          <label for="description">Description</label>
+          <input type="text" id="description" />
+          <label for="dueDate">Due Date</label>
+          <input type="text" id="dueDate" />
+          <label for="priorite">priorite</label>
+          <input type="text" id="priorite" />
+          <div class="buttons">
+            <button type="submit" class="submit">add todo</button>
+            <button type="button" id="cancelBtn" formmethod="dialog">
+              Close
+            </button>
+          </div>
+        </form>
+      </dialog>
+
+      <section>
+        <div class="sectBtns">
+          <button>
+            <span class="mdi mdi-calendar-account-outline"> </span>All
+          </button>
+          <button><span class="mdi mdi-calendar-today"> </span>Today</button>
+          <button>
+            <span class="mdi mdi-calendar-week-outline"> </span>Week
+          </button>
+          <button><span class="mdi mdi-calendar-star"> </span>Important</button>
+          <button>
+            <span class="mdi mdi-calendar-check"> </span>Completed
+          </button>
+        </div>
+
+        <div class="project">
+          <p>projects</p>
+          <p id="projectAddBtn">
+            <span class="mdi mdi-plus-circle-outline" id="btn"></span>
+          </p>
+        </div>
+        <div class="displayProject"></div>
+      </section>
+
+      <main>
+        <div class="displayTodo"></div>
+        <button id="addBtn">Add</button>
+      </main>
+    </div>
+
+    <dialog id="projectModal">
+      <form action="" id="projectForm">
+        <label for="projectName">Name</label>
+        <input type="text" id="projectName" />
+        <button type="submit" class="submit">add</button>
+        <button id="cancelBtnProject">Close</button>
+      </form>
+    </dialog>
+    <script src="main.js"></script>
+  </body>
+</html>

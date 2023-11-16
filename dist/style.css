@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  background-color: antiquewhite;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+}
+dialog {
+  width: 700px;
+  border-radius: 20px;
+  border: none;
+}
+#newTodo,
+#projectForm {
+  background-color: rgb(239, 235, 235);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 5px;
+}
+form input {
+  height: 30px;
+  border-radius: 5px;
+}
+.buttons {
+  display: flex;
+  position: relative;
+}
+.buttons button,
+#projectForm button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+#cancelBtn {
+  position: absolute;
+  right: 0;
+  background-color: red;
+}
+.submit {
+  background-color: green;
+}
+.todoTable {
+  border-collapse: collapse;
+  margin: 30px;
+}
+th {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.todoTable th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+header {
+  background-color: gray;
+  padding: 30px;
+  font-size: large;
+}
+section {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  overflow: scroll;
+  height: 100vh;
+}
+.sectBtns {
+  display: flex;
+  flex-direction: column;
+}
+.sectBtns button {
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 5px;
+  font-size: large;
+}
+.sectBtns button:hover {
+  border: 1px solid gray;
+}
+main {
+  background-color: rgb(239, 235, 235);
+  flex: 4;
+  padding: 40px;
+}
+.project {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.project #projectAddBtn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.project p {
+  font-size: large;
+  font-weight: bold;
+}
+
+#projectForm {
+  position: relative;
+}
+#cancelBtnProject {
+  position: absolute;
+  right: 19px;
+  bottom: 20px;
+  background-color: red;
+}
+.projectDiv {
+  display: flex;
+}
+.projectDiv button {
+  border: none;
+  background: none;
+}
